@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <!-- <base href="/"> -->
+
+    <title>Simple Starter</title>
+    <meta name="description" content="Simple Starter Description" />
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <link rel="icon" href="images/favicon.png" />
+    <meta property="og:image" content="images/preview.jpg" />
+    <link rel="stylesheet" href="libs/bootstrap/css/bootstrap-reboot.min.css" />
+    <link rel="stylesheet" href="libs/bootstrap/css/bootstrap-grid.min.css" />
+
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/media.css" />
+
+    <link rel="stylesheet" href="css/color-combination.css" />
+
+    <script src="libs/jquery/jquery-3.6.0.min.js" defer></script>
+
+    <script src="js/color-combination.js" defer></script>
+  </head>
+  <body>
+    <div class="screen">
+      <div
+        class="d-flex flex-column align-items-center justify-content-center"
+        style="height: 100vh"
+      >
+        <div style="font-size: 65px; margin-bottom: 130px">
+          СОЧЕТАНИЕ ЦВЕТОВ
+        </div>
+        <div
+          onclick="nextPage()"
+          style="
+            width: 84px;
+            height: 84px;
+            border-radius: 100%;
+            background: #2a2e73;
+          "
+        ></div>
+      </div>
+    </div>
+    <div class="screen">
+      <div
+        class="d-flex flex-column align-items-center justify-content-center"
+        style="
+          min-height: 100vh;
+          margin: 0 auto;
+          padding: 50px 0;
+          position: relative;
+        "
+      >
+        <div style="font-size: 40px; text-align: center; max-width: 791px">
+          Всю цветовую радугу принято распологать по кругу. Одним из таких стал
+          известный цветовой круг Иоханесса Иттена. По этому кругу принято
+          делить цвета на несколько категорий:
+        </div>
+        <div style="margin-top: 57px">
+          <img src="./images/comb/color-comb-1.png" alt="" />
+        </div>
+        <div
+          onclick="nextPage()"
+          style="
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 10%;
+            cursor: pointer;
+          "
+        >
+          <svg
+            width="84"
+            height="84"
+            viewBox="0 0 84 84"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle
+              cx="42"
+              cy="42"
+              r="39"
+              transform="rotate(-90 42 42)"
+              stroke="#2A2E73"
+              stroke-width="6"
+            />
+            <path
+              d="M18 42L66 42M66 42L49.8689 26.5M66 42L49.8689 58"
+              stroke="#2A2E73"
+              stroke-width="6"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div class="screen">
+      <div
+        class="d-flex justify-content-center align-items-center"
+        style="
+          min-height: 100vh;
+          margin: 0 auto;
+          padding: 50px 0;
+          position: relative;
+          gap: 200px;
+        "
+      >
+        <div class="">
+          <img src="./images/comb/color-comb-2.png" alt="" />
+        </div>
+        <div style="font-size: 40px; max-width: 791px">
+          Первичные цвета — синий, жёлтый, красный. <br />
+          Основные цвета, из которых можно получить все остальные
+        </div>
+        <div
+          onclick="nextPage()"
+          style="
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 10%;
+            cursor: pointer;
+          "
+        >
+          <svg
+            width="84"
+            height="84"
+            viewBox="0 0 84 84"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle
+              cx="42"
+              cy="42"
+              r="39"
+              transform="rotate(-90 42 42)"
+              stroke="#2A2E73"
+              stroke-width="6"
+            />
+            <path
+              d="M18 42L66 42M66 42L49.8689 26.5M66 42L49.8689 58"
+              stroke="#2A2E73"
+              stroke-width="6"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div class="screen">
+      <div
+        class="d-flex justify-content-center align-items-center"
+        style="
+          min-height: 100vh;
+          margin: 0 auto;
+          padding: 50px 0;
+          position: relative;
+          gap: 200px;
+        "
+      >
+        <div class="">
+          <img src="./images/comb/color-comb-3.png" alt="" />
+        </div>
+        <div class="" style="height: 100%">
+          <div style="font-size: 40px; max-width: 791px">
+            Вторичные цвета — зелёный, оранжевый и фиолетовый. <br />
+            Каждый из них получается при смешивании двух разных первичных
+            цветов.
+          </div>
+          <div
+            class="d-flex justify-content-between align-items-center"
+            style="margin-top: 50px"
+          >
+            <div onclick="prevPage()">
+              <svg
+                width="84"
+                height="84"
+                viewBox="0 0 84 84"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle
+                  cx="42"
+                  cy="42"
+                  r="39"
+                  transform="rotate(90 42 42)"
+                  stroke="#2A2E73"
+                  stroke-width="6"
+                />
+                <path
+                  d="M66 42L18 42M18 42L34.1311 57.5M18 42L34.1311 26"
+                  stroke="#2A2E73"
+                  stroke-width="6"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+
+            <div onclick="nextPage()">
+              <svg
+                width="84"
+                height="84"
+                viewBox="0 0 84 84"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle
+                  cx="42"
+                  cy="42"
+                  r="39"
+                  transform="rotate(-90 42 42)"
+                  stroke="#2A2E73"
+                  stroke-width="6"
+                />
+                <path
+                  d="M18 42L66 42M66 42L49.8689 26.5M66 42L49.8689 58"
+                  stroke="#2A2E73"
+                  stroke-width="6"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="screen">
+      <div
+        class="d-flex justify-content-center align-items-center"
+        style="
+          min-height: 100vh;
+          margin: 0 auto;
+          padding: 50px 0;
+          position: relative;
+          gap: 200px;
+        "
+      >
+        <div class="">
+          <img src="./images/comb/color-comb-4.png" alt="" />
+        </div>
+        <div class="" style="height: 100%">
+          <div style="font-size: 40px; max-width: 791px">
+            Третичные цвета — цвета, получаемые при смешивании первичного и
+            вторичного цветов, которые находятся рядом на схеме.
+          </div>
+          <div
+            class="d-flex justify-content-between align-items-center"
+            style="margin-top: 50px"
+          >
+            <div onclick="prevPage()">
+              <svg
+                width="84"
+                height="84"
+                viewBox="0 0 84 84"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle
+                  cx="42"
+                  cy="42"
+                  r="39"
+                  transform="rotate(90 42 42)"
+                  stroke="#2A2E73"
+                  stroke-width="6"
+                />
+                <path
+                  d="M66 42L18 42M18 42L34.1311 57.5M18 42L34.1311 26"
+                  stroke="#2A2E73"
+                  stroke-width="6"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+
+            <div onclick="nextPage()">
+              <svg
+                width="84"
+                height="84"
+                viewBox="0 0 84 84"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle
+                  cx="42"
+                  cy="42"
+                  r="39"
+                  transform="rotate(-90 42 42)"
+                  stroke="#2A2E73"
+                  stroke-width="6"
+                />
+                <path
+                  d="M18 42L66 42M66 42L49.8689 26.5M66 42L49.8689 58"
+                  stroke="#2A2E73"
+                  stroke-width="6"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="screen">
+      <div
+        class="d-flex align-items-center justify-content-center"
+        style="min-height: 100vh; position: relative"
+      >
+        <div
+          class="text-center"
+          style="
+            max-width: 791px;
+            font-size: 40px;
+            text-align: center;
+            line-height: 105%;
+          "
+        >
+          В цветовом круге можно также узнать основные цветовые сочетания,
+          которые используются в дизайне и искусстве
+        </div>
+        <div
+          onclick="nextPage()"
+          style="
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 10%;
+            cursor: pointer;
+          "
+        >
+          <svg
+            width="84"
+            height="84"
+            viewBox="0 0 84 84"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle
+              cx="42"
+              cy="42"
+              r="39"
+              transform="rotate(-90 42 42)"
+              stroke="#2A2E73"
+              stroke-width="6"
+            />
+            <path
+              d="M18 42L66 42M66 42L49.8689 26.5M66 42L49.8689 58"
+              stroke="#2A2E73"
+              stroke-width="6"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div class="screen">
+      <div
+        class="d-flex justify-content-center"
+        style="
+          min-height: 100vh;
+          margin: 0 auto;
+          padding: 200px 0;
+          position: relative;
+          gap: 200px;
+        "
+      >
+        <div class="">
+          <img src="./images/comb/color-comb-5.png" alt="" />
+        </div>
+        <div style="font-size: 40px; max-width: 791px">
+          Комплементарное — сочетание цветов, расположенных друг напротив друга.
+        </div>
+        <div
+          onclick="nextPage()"
+          style="
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 10%;
+            cursor: pointer;
+          "
+        >
+          <svg
+            width="84"
+            height="84"
+            viewBox="0 0 84 84"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle
+              cx="42"
+              cy="42"
+              r="39"
+              transform="rotate(-90 42 42)"
+              stroke="#2A2E73"
+              stroke-width="6"
+            />
+            <path
+              d="M18 42L66 42M66 42L49.8689 26.5M66 42L49.8689 58"
+              stroke="#2A2E73"
+              stroke-width="6"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div class="screen">
+      <div
+        class="d-flex justify-content-center align-items-center"
+        style="
+          min-height: 100vh;
+          margin: 0 auto;
+          padding: 50px 0;
+          position: relative;
+          gap: 200px;
+        "
+      >
+        <div class="">
+          <img src="./images/comb/color-comb-6t.png" alt="" />
+        </div>
+        <div class="" style="height: 100%">
+          <div style="font-size: 40px; max-width: 791px">
+            Триада — сочетание цветов, расположенных по углам равностороннего
+            треугольника
+          </div>
+          <div
+            class="d-flex justify-content-between align-items-center"
+            style="margin-top: 50px"
+          >
+            <div onclick="prevPage()">
+              <svg
+                width="84"
+                height="84"
+                viewBox="0 0 84 84"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle
+                  cx="42"
+                  cy="42"
+                  r="39"
+                  transform="rotate(90 42 42)"
+                  stroke="#2A2E73"
+                  stroke-width="6"
+                />
+                <path
+                  d="M66 42L18 42M18 42L34.1311 57.5M18 42L34.1311 26"
+                  stroke="#2A2E73"
+                  stroke-width="6"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+
+            <div onclick="nextPage()">
+              <svg
+                width="84"
+                height="84"
+                viewBox="0 0 84 84"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle
+                  cx="42"
+                  cy="42"
+                  r="39"
+                  transform="rotate(-90 42 42)"
+                  stroke="#2A2E73"
+                  stroke-width="6"
+                />
+                <path
+                  d="M18 42L66 42M66 42L49.8689 26.5M66 42L49.8689 58"
+                  stroke="#2A2E73"
+                  stroke-width="6"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="screen">
+      <div
+        class="d-flex justify-content-center align-items-center"
+        style="
+          min-height: 100vh;
+          margin: 0 auto;
+          padding: 50px 0;
+          position: relative;
+          gap: 200px;
+        "
+      >
+        <div class="">
+          <img src="./images/comb/color-comb-7.png" alt="" />
+        </div>
+        <div class="" style="height: 100%">
+          <div style="font-size: 40px; max-width: 791px">
+            Контрастная триада — сочетание цветов, в котором к одному цвету
+            берут два соседних противоположного цвета.
+          </div>
+          <div
+            class="d-flex justify-content-between align-items-center"
+            style="margin-top: 50px"
+          >
+            <div onclick="prevPage()">
+              <svg
+                width="84"
+                height="84"
+                viewBox="0 0 84 84"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle
+                  cx="42"
+                  cy="42"
+                  r="39"
+                  transform="rotate(90 42 42)"
+                  stroke="#2A2E73"
+                  stroke-width="6"
+                />
+                <path
+                  d="M66 42L18 42M18 42L34.1311 57.5M18 42L34.1311 26"
+                  stroke="#2A2E73"
+                  stroke-width="6"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+
+            <div onclick="nextPage()">
+              <svg
+                width="84"
+                height="84"
+                viewBox="0 0 84 84"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle
+                  cx="42"
+                  cy="42"
+                  r="39"
+                  transform="rotate(-90 42 42)"
+                  stroke="#2A2E73"
+                  stroke-width="6"
+                />
+                <path
+                  d="M18 42L66 42M66 42L49.8689 26.5M66 42L49.8689 58"
+                  stroke="#2A2E73"
+                  stroke-width="6"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="screen">
+      <div
+        class="d-flex justify-content-center align-items-center"
+        style="
+          min-height: 100vh;
+          margin: 0 auto;
+          padding: 50px 0;
+          position: relative;
+          gap: 200px;
+        "
+      >
+        <div class="">
+          <img src="./images/comb/color-comb-8.png" alt="" />
+        </div>
+        <div class="" style="height: 100%">
+          <div style="font-size: 40px; max-width: 791px">
+            Аналоговая триада — сочетание трёх соседних цветов.
+          </div>
+          <div
+            class="d-flex justify-content-between align-items-center"
+            style="margin-top: 50px"
+          >
+            <div onclick="prevPage()">
+              <svg
+                width="84"
+                height="84"
+                viewBox="0 0 84 84"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle
+                  cx="42"
+                  cy="42"
+                  r="39"
+                  transform="rotate(90 42 42)"
+                  stroke="#2A2E73"
+                  stroke-width="6"
+                />
+                <path
+                  d="M66 42L18 42M18 42L34.1311 57.5M18 42L34.1311 26"
+                  stroke="#2A2E73"
+                  stroke-width="6"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+
+            <div onclick="nextPage()">
+              <svg
+                width="84"
+                height="84"
+                viewBox="0 0 84 84"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle
+                  cx="42"
+                  cy="42"
+                  r="39"
+                  transform="rotate(-90 42 42)"
+                  stroke="#2A2E73"
+                  stroke-width="6"
+                />
+                <path
+                  d="M18 42L66 42M66 42L49.8689 26.5M66 42L49.8689 58"
+                  stroke="#2A2E73"
+                  stroke-width="6"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="screen">
+      <div
+        class="d-flex justify-content-center align-items-center"
+        style="
+          min-height: 100vh;
+          margin: 0 auto;
+          padding: 50px 0;
+          position: relative;
+          gap: 200px;
+        "
+      >
+        <div class="">
+          <img src="./images/comb/color-comb-9.png" alt="" />
+        </div>
+        <div class="" style="height: 100%">
+          <div style="font-size: 40px; max-width: 791px">
+            Квадрат — сочетание цветов, расположенных по углам квадрата.
+          </div>
+          <div
+            class="d-flex justify-content-between align-items-center"
+            style="margin-top: 50px"
+          >
+            <div onclick="prevPage()">
+              <svg
+                width="84"
+                height="84"
+                viewBox="0 0 84 84"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle
+                  cx="42"
+                  cy="42"
+                  r="39"
+                  transform="rotate(90 42 42)"
+                  stroke="#2A2E73"
+                  stroke-width="6"
+                />
+                <path
+                  d="M66 42L18 42M18 42L34.1311 57.5M18 42L34.1311 26"
+                  stroke="#2A2E73"
+                  stroke-width="6"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+
+            <div onclick="nextPage()">
+              <svg
+                width="84"
+                height="84"
+                viewBox="0 0 84 84"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle
+                  cx="42"
+                  cy="42"
+                  r="39"
+                  transform="rotate(-90 42 42)"
+                  stroke="#2A2E73"
+                  stroke-width="6"
+                />
+                <path
+                  d="M18 42L66 42M66 42L49.8689 26.5M66 42L49.8689 58"
+                  stroke="#2A2E73"
+                  stroke-width="6"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="screen">
+      <div
+        class="d-flex justify-content-center align-items-center"
+        style="
+          min-height: 100vh;
+          margin: 0 auto;
+          padding: 50px 0;
+          position: relative;
+          gap: 200px;
+        "
+      >
+        <div class="">
+          <img src="./images/comb/color-comb-10.png" alt="" />
+        </div>
+        <div class="" style="height: 100%">
+          <div style="font-size: 40px; max-width: 791px">
+            Тетрада — сочетание цветов, расположенных по углам прямоугольника.
+          </div>
+          <div
+            class="d-flex justify-content-between align-items-center"
+            style="margin-top: 50px; margin-bottom: 75px"
+          >
+            <div onclick="prevPage()">
+              <svg
+                width="84"
+                height="84"
+                viewBox="0 0 84 84"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle
+                  cx="42"
+                  cy="42"
+                  r="39"
+                  transform="rotate(90 42 42)"
+                  stroke="#2A2E73"
+                  stroke-width="6"
+                />
+                <path
+                  d="M66 42L18 42M18 42L34.1311 57.5M18 42L34.1311 26"
+                  stroke="#2A2E73"
+                  stroke-width="6"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+          </div>
+          <div style="font-size: 40px; margin-bottom: 39px">
+            Ну а теперь настало время практики!
+          </div>
+          <a
+            href="/color-combination-game.html"
+            style="text-decoration: none; font-size: 40px"
+            class="button-big"
+            >ПЕРЕЙТИ К УПРАЖНЕНИЮ</a
+          >
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

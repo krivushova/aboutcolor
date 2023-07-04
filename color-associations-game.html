@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <!-- <base href="/"> -->
+
+    <title>Simple Starter</title>
+    <meta name="description" content="Simple Starter Description" />
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <link rel="icon" href="images/favicon.png" />
+    <meta property="og:image" content="images/preview.jpg" />
+    <link rel="stylesheet" href="libs/bootstrap/css/bootstrap-reboot.min.css" />
+    <link rel="stylesheet" href="libs/bootstrap/css/bootstrap-grid.min.css" />
+
+    <link rel="stylesheet" href="css/color-associations-game.css" />
+
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/media.css" />
+
+    <script src="libs/jquery/jquery-3.6.0.min.js" defer></script>
+
+    <script src="js/color-associations-game.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="title">Урок 1</div>
+      <div class="screen show">
+        <div class="d-flex" style="gap: 72px; padding-left: 60px">
+          <div class="img" id="dropZone" style="width: 495px; height: 721px">
+            <img
+              src="./images/assoc/game-1.png"
+              style="width: 100%; height: 100%"
+            />
+          </div>
+          <div style="max-width: 791px">
+            <div style="font-weight: 700; font-size: 50px; margin-bottom: 50px">
+              Выбери подходящий Пёсе цвет!
+            </div>
+            <div
+              style="font-size: 40px; line-height: 105%; margin-bottom: 69px"
+            >
+              Он очень активный и энергичный пёс, любит подразнить Птица и
+              занять всё его спокойное время своими неспокойными идеями.
+            </div>
+            <div class="d-flex" style="gap: 56px">
+              <div
+                draggable="true"
+                class="color-item"
+                style="background-color: #349ff7"
+              ></div>
+              <div
+                draggable="true"
+                class="color-item"
+                style="background-color: #6a8836"
+              ></div>
+              <div
+                draggable="true"
+                class="color-item"
+                style="background-color: #c03724"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="screen">
+        <div
+          class="d-flex align-items-center"
+          style="gap: 72px; padding-left: 60px"
+        >
+          <div class="img" id="dropZone" style="width: 495px; height: 721px">
+            <img
+              src="./images/assoc/game-2.png"
+              style="width: 100%; height: 100%"
+            />
+          </div>
+          <div style="max-width: 791px">
+            <div
+              style="font-size: 50px; font-weight: 700; margin-bottom: 140px"
+            >
+              Отлично!
+            </div>
+            <div onclick="nextPage()" class="button-primary">ДАЛЕЕ</div>
+          </div>
+        </div>
+      </div>
+      <div class="screen">
+        <div class="d-flex" style="gap: 72px; padding-left: 60px">
+          <div class="img" id="dropZone2" style="width: 495px; height: 721px">
+            <img
+              src="./images/assoc/game-3.png"
+              style="width: 100%; height: 100%"
+            />
+          </div>
+          <div style="max-width: 791px">
+            <div style="font-weight: 700; font-size: 50px; margin-bottom: 50px">
+              Выбери подходящий Птицу цвет!
+            </div>
+            <div
+              style="font-size: 40px; line-height: 105%; margin-bottom: 69px"
+            >
+              Спокойный и рассудительный. И довольно мрачный... От жизни он
+              хотел бы только одного: покоя и умиротворения, слияния с
+              бесконечно-вечным...
+            </div>
+            <div class="d-flex" style="gap: 56px">
+              <div
+                draggable="true"
+                class="color-item-2"
+                style="background-color: #c03724"
+              ></div>
+              <div
+                draggable="true"
+                class="color-item-2"
+                style="background-color: #43478a"
+              ></div>
+              <div
+                draggable="true"
+                class="color-item-2"
+                style="background-color: #ffd42c"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="screen">
+        <div
+          class="d-flex align-items-center"
+          style="gap: 72px; padding-left: 60px"
+        >
+          <div class="img" id="dropZone" style="width: 495px; height: 721px">
+            <img
+              src="./images/assoc/game-4.png"
+              style="width: 100%; height: 100%"
+            />
+          </div>
+          <div style="max-width: 791px">
+            <div
+              style="font-size: 50px; font-weight: 700; margin-bottom: 140px"
+            >
+              Так держать!
+            </div>
+            <a href="/color-combination.html" class="button-primary">
+              ЧТО ЖЕ ДАЛЬШЕ?
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      let draggingElement = null;
+      let draggingElement2 = null;
+      document.addEventListener("DOMContentLoaded", function () {
+        var colorItems = document.querySelectorAll(".color-item");
+        var colorItems2 = document.querySelectorAll(".color-item-2");
+        var dropZone = document.getElementById("dropZone");
+        var dropZone2 = document.getElementById("dropZone2");
+
+        // Add event listeners to each color-item
+        colorItems.forEach(function (colorItem) {
+          colorItem.addEventListener("dragstart", handleDragStart);
+        });
+        colorItems2.forEach(function (colorItem) {
+          colorItem.addEventListener("dragstart", handleDragStart2);
+        });
+
+        // Event listener for the drop event
+        dropZone.addEventListener("drop", handleDrop);
+        dropZone.addEventListener("dragover", handleDragOver);
+        dropZone2.addEventListener("drop", handleDrop2);
+        dropZone2.addEventListener("dragover", handleDragOver);
+      });
+
+      function handleDragStart(event) {
+        draggingElement = event.target;
+        event.dataTransfer.setData(
+          "text/plain",
+          event.target.style.backgroundColor
+        );
+      }
+      function handleDragStart2(event) {
+        draggingElement2 = event.target;
+        event.dataTransfer.setData(
+          "text/plain",
+          event.target.style.backgroundColor
+        );
+      }
+
+      function handleDrop(event) {
+        event.preventDefault();
+        var color = event.dataTransfer.getData("text/plain");
+        // Call your custom function with the color as an argument
+        executeFunctionWithColor(event.target);
+      }
+      function handleDrop2(event) {
+        event.preventDefault();
+        var color = event.dataTransfer.getData("text/plain");
+        // Call your custom function with the color as an argument
+        executeFunctionWithColor2(event.target);
+      }
+
+      function handleDragOver(event) {
+        event.preventDefault();
+      }
+
+      // Custom function to execute with the selected color
+      function executeFunctionWithColor(item) {
+        var colorItems = document.querySelectorAll(".color-item");
+        if (colorItems[2] === draggingElement) {
+          nextPage();
+        }
+      }
+      function executeFunctionWithColor2(item) {
+        var colorItems = document.querySelectorAll(".color-item-2");
+        if (colorItems[1] === draggingElement2) {
+          nextPage();
+        }
+      }
+    </script>
+  </body>
+</html>

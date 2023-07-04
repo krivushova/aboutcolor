@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <!-- <base href="/"> -->
+
+    <title>Simple Starter</title>
+    <meta name="description" content="Simple Starter Description" />
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <link rel="icon" href="images/favicon.png" />
+    <meta property="og:image" content="images/preview.jpg" />
+    <link rel="stylesheet" href="libs/bootstrap/css/bootstrap-reboot.min.css" />
+    <link rel="stylesheet" href="libs/bootstrap/css/bootstrap-grid.min.css" />
+
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/media.css" />
+
+    <script src="libs/jquery/jquery-3.6.0.min.js" defer></script>
+
+    <script src="js/common.js" defer></script>
+
+    <style>
+      #slider img {
+        display: none;
+        max-height: 722px;
+      }
+
+      #slider img.active {
+        display: block;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="navbar">
+      <div class="navbar-container">
+        <a href="main.html" class="navbar-button">
+          <svg
+            width="62"
+            height="62"
+            viewBox="0 0 62 62"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle cx="31" cy="31" r="27" stroke="#2A2E73" stroke-width="8" />
+          </svg>
+        </a>
+        <div class="navbar-items">
+          <a href="/games.html" class="navbar-items__item">УРОКИ</a>
+          <a href="/gallery.html" class="navbar-items__item">ГАЛЕРЕЯ</a>
+          <a href="/about.html" class="navbar-items__item">О САЙТЕ</a>
+        </div>
+      </div>
+    </div>
+    <div
+      style="
+        text-align: center;
+        font-size: 40px;
+        max-width: 1800px;
+        margin: 0 auto 64px;
+      "
+    >
+      Здесь лежат иллюстрации, использованные на сайте в качестве фоновых
+      изображений и заданий к урокам
+    </div>
+    <div style="margin: 0 auto 88px">
+      <div
+        id="slider"
+        style="overflow: hidden"
+        class="d-flex justify-content-center"
+      >
+        <img
+          class="active"
+          style="object-fit: cover; object-position: center"
+          src="./images/color-associations-bg.png"
+          alt=""
+        />
+        <img
+          style="object-fit: cover; object-position: center"
+          src="./images/main-page-bg.png"
+          alt=""
+        />
+        <img
+          style="object-fit: cover; object-position: center"
+          src="./images/comb-game/comb-game-1.png"
+          alt=""
+        />
+        <img
+          style="object-fit: cover; object-position: center"
+          src="./images/comb-game/comb-game-2.png"
+          alt=""
+        />
+        <img
+          style="object-fit: cover; object-position: center"
+          src="./images/assoc/game-1.png"
+          alt=""
+        />
+        <img
+          style="object-fit: cover; object-position: center"
+          src="./images/assoc/game-2.png"
+          alt=""
+        />
+        <img
+          style="object-fit: cover; object-position: center"
+          src="./images/assoc/game-3.png"
+          alt=""
+        />
+        <img
+          style="object-fit: cover; object-position: center"
+          src="./images/assoc/game-4.png"
+          alt=""
+        />
+        <img
+          style="object-fit: cover; object-position: center"
+          src="./images/image-1.png"
+          alt=""
+        />
+        <img
+          style="object-fit: cover; object-position: center"
+          src="./images/image-2.png"
+          alt=""
+        />
+      </div>
+    </div>
+    <div
+      class="d-flex align-items-center justify-content-center"
+      style="gap: 40px"
+    >
+      <div style="cursor: pointer" id="prevButton">
+        <svg
+          width="84"
+          height="84"
+          viewBox="0 0 84 84"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <circle
+            cx="42"
+            cy="42"
+            r="39"
+            transform="rotate(90 42 42)"
+            stroke="#2A2E73"
+            stroke-width="6"
+          />
+          <path
+            d="M66 42L18 42M18 42L34.1311 57.5M18 42L34.1311 26"
+            stroke="#2A2E73"
+            stroke-width="6"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </div>
+      <div style="cursor: pointer" id="nextButton">
+        <svg
+          width="84"
+          height="84"
+          viewBox="0 0 84 84"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <circle
+            cx="42"
+            cy="42"
+            r="39"
+            transform="rotate(-90 42 42)"
+            stroke="#2A2E73"
+            stroke-width="6"
+          />
+          <path
+            d="M18 42L66 42M66 42L49.8689 26.5M66 42L49.8689 58"
+            stroke="#2A2E73"
+            stroke-width="6"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </div>
+    </div>
+  </body>
+
+  <script>
+    var images = document.querySelectorAll("#slider img");
+    var prevButton = document.getElementById("prevButton");
+    var nextButton = document.getElementById("nextButton");
+    var currentIndex = 0;
+
+    function showImage(index) {
+      for (var i = 0; i < images.length; i++) {
+        images[i].classList.remove("active");
+      }
+      images[index].classList.add("active");
+    }
+
+    prevButton.addEventListener("click", function () {
+      currentIndex = (currentIndex - 1 + images.length) % images.length;
+      showImage(currentIndex);
+    });
+
+    nextButton.addEventListener("click", function () {
+      currentIndex = (currentIndex + 1) % images.length;
+      showImage(currentIndex);
+    });
+
+    // Show the initial image
+    showImage(currentIndex);
+  </script>
+</html>

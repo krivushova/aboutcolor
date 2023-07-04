@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <!-- <base href="/"> -->
+
+    <title>Simple Starter</title>
+    <meta name="description" content="Simple Starter Description" />
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <link rel="icon" href="images/favicon.png" />
+    <meta property="og:image" content="images/preview.jpg" />
+    <link rel="stylesheet" href="libs/bootstrap/css/bootstrap-reboot.min.css" />
+    <link rel="stylesheet" href="libs/bootstrap/css/bootstrap-grid.min.css" />
+
+    <link rel="stylesheet" href="css/color-combination-game.css" />
+
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/media.css" />
+
+    <script src="libs/jquery/jquery-3.6.0.min.js" defer></script>
+
+    <script src="js/color-combination-game.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="title">Урок 2</div>
+      <div class="screen">
+        <div class="d-flex" style="gap: 72px; padding-left: 60px">
+          <div class="img" id="dropZone" style="width: 495px; height: 721px">
+            <img
+              src="./images/comb-game/comb-game-1.png"
+              style="width: 100%; height: 100%"
+            />
+          </div>
+          <div style="max-width: 791px">
+            <div
+              style="font-size: 50px; line-height: 105%; margin-bottom: 90px"
+            >
+              Птиц о чём-то задумался... Какое цветовое сочетание используется
+              на картинке?
+            </div>
+            <div
+              id="label"
+              class="label"
+              style="font-weight: 700; font-size: 40px; margin-bottom: 34px"
+            >
+              Не совсем... Попробуешь еще раз?
+            </div>
+            <div>
+              <div class="first-item">Комплементарное</div>
+              <div class="first-item">Аналоговая Триада</div>
+              <div class="first-item">Квадрат</div>
+            </div>
+            <div onclick="nextPage()" class="button">ДАЛЕЕ</div>
+          </div>
+        </div>
+      </div>
+      <div class="screen">
+        <div class="d-flex" style="gap: 72px; padding-left: 60px">
+          <div class="img" id="dropZone" style="width: 495px; height: 721px">
+            <img
+              src="./images/comb-game/comb-game-2.png"
+              style="width: 100%; height: 100%"
+            />
+          </div>
+          <div style="max-width: 791px">
+            <div
+              style="font-size: 50px; line-height: 105%; margin-bottom: 90px"
+            >
+              Птиц о чём-то задумался... Какое цветовое сочетание используется
+              на картинке?
+            </div>
+            <div
+              id="second-label"
+              class="label"
+              style="font-weight: 700; font-size: 40px; margin-bottom: 34px"
+            >
+              Не совсем... Попробуешь еще раз?
+            </div>
+            <div>
+              <div class="second-item">Триада</div>
+              <div class="second-item">Тетрада</div>
+              <div class="second-item">Аналоговая триада</div>
+            </div>
+            <a href="color-charac.html" class="button2">К НОВОЙ ТЕМЕ</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var firstItems = document.querySelectorAll(".first-item");
+      var secondItems = document.querySelectorAll(".second-item");
+
+      const label = document.getElementById("label");
+      const label2 = document.getElementById("second-label");
+      const button = document.querySelector(".button");
+      const button2 = document.querySelector(".button2");
+
+      function secondHandleClick() {
+        for (var i = 0; i < secondItems.length; i++) {
+          var item = secondItems[i];
+          item.classList.remove(
+            "selected",
+            "selected-success",
+            "selected-error"
+          );
+        }
+
+        if (this === secondItems[0]) {
+          this.classList.add("selected-success");
+          label2.classList.add("show-label");
+          label2.textContent = "Всё выучил? Горжусь!";
+          button2.classList.add("show");
+        } else {
+          this.classList.add("selected-error");
+          label2.classList.add("show-label");
+          label2.textContent = "Неверно, попробуй снова";
+          button2.classList.remove("show");
+        }
+
+        for (var j = 0; j < secondItems.length; j++) {
+          var otherItem = secondItems[j];
+          if (otherItem !== this) {
+            otherItem.classList.add("selected");
+          }
+        }
+      }
+      function handleClick() {
+        for (var i = 0; i < firstItems.length; i++) {
+          var item = firstItems[i];
+          item.classList.remove(
+            "selected",
+            "selected-success",
+            "selected-error"
+          );
+        }
+
+        if (this === firstItems[1]) {
+          this.classList.add("selected-success");
+          label.classList.add("show-label");
+          label.textContent = "Правильно!";
+          button.classList.add("show");
+        } else {
+          this.classList.add("selected-error");
+          label.classList.add("show-label");
+          label.textContent = "Не совсем... Попробуешь еще раз?";
+          button.classList.remove("show");
+        }
+
+        for (var j = 0; j < firstItems.length; j++) {
+          var otherItem = firstItems[j];
+          if (otherItem !== this) {
+            otherItem.classList.add("selected");
+          }
+        }
+      }
+
+      for (var k = 0; k < firstItems.length; k++) {
+        var item = firstItems[k];
+        item.addEventListener("click", handleClick);
+      }
+      for (var k = 0; k < secondItems.length; k++) {
+        var item = secondItems[k];
+        item.addEventListener("click", secondHandleClick);
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <!-- <base href="/"> -->
+
+    <title>Simple Starter</title>
+    <meta name="description" content="Simple Starter Description" />
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <link rel="icon" href="images/favicon.png" />
+    <meta property="og:image" content="images/preview.jpg" />
+    <link rel="stylesheet" href="libs/bootstrap/css/bootstrap-reboot.min.css" />
+    <link rel="stylesheet" href="libs/bootstrap/css/bootstrap-grid.min.css" />
+
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/media.css" />
+    <link rel="stylesheet" href="css/summary.css" />
+
+    <script src="libs/jquery/jquery-3.6.0.min.js" defer></script>
+    <script src="js/summary.js" defer></script>
+  </head>
+  <body>
+    <div class="screen">
+      <div
+        class="d-flex flex-column align-items-center justify-content-center"
+        style="height: 100vh"
+      >
+        <div style="font-size: 65px; margin-bottom: 130px">ИТОГИ</div>
+        <div
+          onclick="nextPage()"
+          style="
+            width: 84px;
+            height: 84px;
+            border-radius: 100%;
+            background: #2a2e73;
+          "
+        ></div>
+      </div>
+    </div>
+    <div class="screen">
+      <div
+        class="d-flex flex-column align-items-center justify-content-center"
+        style="height: 100vh"
+      >
+        <div
+          style="
+            font-size: 40px;
+            margin-bottom: 130px;
+            line-height: 105%;
+            max-width: 792px;
+            text-align: center;
+          "
+        >
+          За время, проведённое на сайте мы смогли узнать, что такое цвет, его
+          непростую роль в понимании окружающего мира и основы цветоведения...
+        </div>
+        <div
+          onclick="nextPage()"
+          style="
+            width: 84px;
+            height: 84px;
+            border-radius: 100%;
+            background: #2a2e73;
+          "
+        ></div>
+      </div>
+    </div>
+    <div class="screen">
+      <div
+        class="d-flex flex-column align-items-center justify-content-center"
+        style="height: 100vh; position: relative"
+      >
+        <div
+          style="
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+          "
+        >
+          <img src="./images/summary-1.png" alt="" />
+        </div>
+        <div style="position: absolute; left: 0; top: 50%">
+          <img src="./images/summary-2.png" alt="" />
+        </div>
+        <div style="font-size: 40px; margin-bottom: 88px">
+          И кроме этого вы завели новых друзей!
+        </div>
+        <div
+          style="
+            font-size: 40px;
+            text-align: center;
+            line-height: 105%;
+            margin-bottom: 80px;
+          "
+        >
+          Обязательно погуляем ещё! <br />Спасибо за время!
+        </div>
+        <a
+          href="main.html"
+          style="position: relative; z-index: 2"
+          class="button"
+          >ГЛАВНЫЙ ЭКРАН</a
+        >
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,86 @@
+.container {
+  max-width: 1650px;
+  margin: 0 auto 50px;
+}
+.title {
+  font-size: 50px;
+  font-weight: 700;
+  margin-bottom: 54px;
+}
+.screen {
+  display: none;
+}
+.show {
+  display: block;
+}
+
+.first-item {
+  background: none;
+  border: 8px solid #2a2e73;
+  padding: 0px 63px;
+  font-weight: 700;
+  font-size: 60px;
+  margin-bottom: 34px;
+  width: fit-content;
+  border-radius: 82px;
+  cursor: pointer;
+}
+.second-item {
+  background: none;
+  border: 8px solid #2a2e73;
+  padding: 0px 63px;
+  font-weight: 700;
+  font-size: 60px;
+  margin-bottom: 34px;
+  width: fit-content;
+  border-radius: 82px;
+  cursor: pointer;
+}
+
+.selected-error {
+  color: #de2511;
+  border: 8px solid #de2511;
+}
+.selected-success {
+  color: #1e8e5b;
+  border: 8px solid #1e8e5b;
+}
+.selected {
+  opacity: 50%;
+}
+
+.label {
+  opacity: 0;
+}
+.show-label {
+  opacity: 1;
+}
+.button {
+  padding: 10px 82px;
+  color: #c7ffff;
+  font-weight: 700;
+  background: #2a2e73;
+  border-radius: 82px;
+  width: fit-content;
+  font-size: 60px;
+  cursor: pointer;
+  display: none;
+}
+.button.show {
+  display: block;
+}
+.button2 {
+  padding: 10px 82px;
+  color: #c7ffff;
+  font-weight: 700;
+  background: #2a2e73;
+  border-radius: 82px;
+  width: fit-content;
+  font-size: 60px;
+  cursor: pointer;
+  display: none;
+  text-decoration: none;
+}
+.button2.show {
+  display: block;
+}

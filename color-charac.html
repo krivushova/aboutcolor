@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <!-- <base href="/"> -->
+
+    <title>Simple Starter</title>
+    <meta name="description" content="Simple Starter Description" />
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <link rel="icon" href="images/favicon.png" />
+    <meta property="og:image" content="images/preview.jpg" />
+    <link rel="stylesheet" href="libs/bootstrap/css/bootstrap-reboot.min.css" />
+    <link rel="stylesheet" href="libs/bootstrap/css/bootstrap-grid.min.css" />
+
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/media.css" />
+
+    <link rel="stylesheet" href="css/color-charac.css" />
+
+    <script src="libs/jquery/jquery-3.6.0.min.js" defer></script>
+
+    <script src="js/color-charac.js" defer></script>
+  </head>
+  <body>
+    <div class="screen">
+      <div
+        class="d-flex flex-column align-items-center justify-content-center"
+        style="height: 100vh"
+      >
+        <div style="font-size: 65px; margin-bottom: 130px">
+          ЦВЕТОВЫЕ ХАРАКТЕРИСТИКИ
+        </div>
+        <div
+          onclick="nextPage()"
+          style="
+            width: 84px;
+            height: 84px;
+            border-radius: 100%;
+            background: #2a2e73;
+          "
+        ></div>
+      </div>
+    </div>
+    <div class="screen">
+      <div
+        class="d-flex align-items-center justify-content-center"
+        style="padding: 80px; gap: 110px;"
+      >
+        <div style="font-size: 40px; line-height: 105%; max-width: 791px">
+          <div style="margin-bottom: 44px">
+            Помимо самого цвета важно знать о трёх его характеристиках:
+          </div>
+          <div style="margin-bottom: 44px">
+            Цветовой тон — само определение цвета на спектре или цветовом круге.
+            По тону мы можем определить, является ли цвет холодным (синий,
+            зелёный, фиолетовый) или тёплым (красный, оранжевый, жёлтый)
+          </div>
+          <div style="margin-bottom: 44px">
+            Светлота — то значение, которое определяет отличие цвета от чёрного
+            или белого. Чем ярче цвет, тем ближе он к белому. И наоборот.
+          </div>
+          <div style="margin-bottom: 44px">
+            Насыщенность — говорит о наличии серого в цвете. Чем больше серого
+            (ахроматического) присутствует в цвете, тем он менее насыщенный
+          </div>
+        </div>
+        <div>
+          <img style="margin-bottom: 150px;" src="./images/charac/charac-1.png"></img>
+          <img style="margin-bottom: 150px;" src="./images/charac/charac-2.png"></img>
+          <img  src="./images/charac/charac-3.png"></img>
+        </div>
+      </div>
+      <div class="d-flex justify-content-center" style="padding-bottom: 20px;">
+        <a href="color-charac-game.html" class="button">ПЕРЕЙТИ К УПРАЖНЕНИЮ</a>
+      </div>
+    </div>
+  </body>
+</html>

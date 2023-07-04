@@ -1,0 +1,15 @@
+.screen {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.button-big {
+  color: #c7ffff;
+  font-size: 60px;
+  background: #2a2e73;
+  border-radius: 72px;
+  padding: 8px 48px;
+}

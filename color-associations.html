@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <!-- <base href="/"> -->
+
+    <title>Simple Starter</title>
+    <meta name="description" content="Simple Starter Description" />
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <link rel="icon" href="images/favicon.png" />
+    <meta property="og:image" content="images/preview.jpg" />
+    <link rel="stylesheet" href="libs/bootstrap/css/bootstrap-reboot.min.css" />
+    <link rel="stylesheet" href="libs/bootstrap/css/bootstrap-grid.min.css" />
+
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/media.css" />
+    <link rel="stylesheet" href="css/color-associations.css" />
+
+    <script src="libs/jquery/jquery-3.6.0.min.js" defer></script>
+
+    <script src="js/color-associations.js" defer></script>
+  </head>
+
+  <body class="main-page">
+    <div class="navbar show">
+      <div class="navbar-container">
+        <a href="main.html" class="navbar-button">
+          <svg
+            width="62"
+            height="62"
+            viewBox="0 0 62 62"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle cx="31" cy="31" r="27" stroke="#2A2E73" stroke-width="8" />
+          </svg>
+        </a>
+        <div class="navbar-items">
+          <a href="/games.html" class="navbar-items__item">УРОКИ</a>
+          <a href="/gallery.html" class="navbar-items__item">ГАЛЕРЕЯ</a>
+          <a href="/about.html" class="navbar-items__item">О САЙТЕ</a>
+        </div>
+      </div>
+    </div>
+    <div class="main show main-bg">
+      <div class="main-container">
+        <div class="text">
+          С вами мир цвета будут познавать Пёс и Птиц Разные, но такие
+          неразлучные друзья!
+        </div>
+        <div onclick="nextPage()" class="button-start">НАЧАТЬ</div>
+        <div style="margin-left: 50px" class="sub-title">Я УЖЕ ВСЁ ЗНАЮ!</div>
+      </div>
+    </div>
+    <div class="main">
+      <div
+        class="align-center justify-center flex-column"
+        style="height: 100vh"
+      >
+        <p class="" style="font-size: 65px">ЦВЕТ И АССОЦИАЦИИ</p>
+        <div class="button-circle" onclick="nextPage()"></div>
+      </div>
+    </div>
+    <div class="main">
+      <div
+        class="align-center justify-center flex-column"
+        style="height: 100vh"
+      >
+        <p
+          class=""
+          style="font-size: 40px; max-width: 792px; text-align: center"
+        >
+          Весь окружающий нас мир наполнен множеством цветов. Ещё с давних
+          времён люди изучали явление цвета, в результате чего сегодня мы можем
+          познакомиться с основной цветовой палитрой жизни. Давайте узнаем, что
+          из себя представляют цвета и с чем они могут быть связаны...
+        </p>
+        <div class="button-circle" onclick="nextPage()"></div>
+      </div>
+    </div>
+    <div class="main">
+      <div class="full-container-center" style="gap: 124px">
+        <div style="width: 554px; height: 556px">
+          <img
+            style="width: 100%; height: 100%"
+            src="./images/assoc/red.png"
+            alt=""
+          />
+        </div>
+        <div class="content" style="max-width: 791px">
+          <div style="font-size: 40px">
+            Красный — самый активный и уверенный цвет! Он привлекает внимание и
+            провоцирует к общению. Однако также он довольно агрессивен и опасен
+          </div>
+          <div onclick="nextPage()" class="d-flex justify-content-end">
+            <svg
+              width="84"
+              height="84"
+              viewBox="0 0 84 84"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle
+                cx="42"
+                cy="42"
+                r="39"
+                transform="rotate(-90 42 42)"
+                stroke="#2A2E73"
+                stroke-width="6"
+              />
+              <path
+                d="M18 42L66 42M66 42L49.8689 26.5M66 42L49.8689 58"
+                stroke="#2A2E73"
+                stroke-width="6"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="main">
+      <div class="full-container-center" style="gap: 124px">
+        <div style="width: 554px; height: 556px">
+          <img
+            style="width: 100%; height: 100%"
+            src="./images/assoc/orange.png"
+            alt=""
+          />
+        </div>
+        <div class="content" style="max-width: 791px">
+          <div style="font-size: 40px">
+            Оранжевый — энергичный и тонизирующий. Действует на организм не так
+            сильно, как красный, поэтому от него так быстро не устаешь. Также во
+            много ассоциируется с уютом и осенью.
+          </div>
+          <div class="d-flex justify-content-between">
+            <div onclick="prevPage()">
+              <svg
+                width="84"
+                height="84"
+                viewBox="0 0 84 84"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle
+                  cx="42"
+                  cy="42"
+                  r="39"
+                  transform="rotate(90 42 42)"
+                  stroke="#2A2E73"
+                  stroke-width="6"
+                />
+                <path
+                  d="M66 42L18 42M18 42L34.1311 57.5M18 42L34.1311 26"
+                  stroke="#2A2E73"
+                  stroke-width="6"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <div onclick="nextPage()">
+              <svg
+                width="84"
+                height="84"
+                viewBox="0 0 84 84"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle
+                  cx="42"
+                  cy="42"
+                  r="39"
+                  transform="rotate(-90 42 42)"
+                  stroke="#2A2E73"
+                  stroke-width="6"
+                />
+                <path
+                  d="M18 42L66 42M66 42L49.8689 26.5M66 42L49.8689 58"
+                  stroke="#2A2E73"
+                  stroke-width="6"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="main">
+      <div class="full-container-center" style="gap: 124px">
+        <div style="width: 554px; height: 556px">
+          <img
+            style="width: 100%; height: 100%"
+            src="./images/assoc/yellow.png"
+            alt=""
+          />
+        </div>
+        <div class="content" style="max-width: 791px">
+          <div style="font-size: 40px">
+            Жёлтый — самый первый цвет, который мы начинаем видеть. Позитивный и
+            яркий. Но некоторые его вариации могут отсылать к болезни или
+            упадку...
+          </div>
+          <div class="d-flex justify-content-between">
+            <div onclick="prevPage()">
+              <svg
+                width="84"
+                height="84"
+                viewBox="0 0 84 84"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle
+                  cx="42"
+                  cy="42"
+                  r="39"
+                  transform="rotate(90 42 42)"
+                  stroke="#2A2E73"
+                  stroke-width="6"
+                />
+                <path
+                  d="M66 42L18 42M18 42L34.1311 57.5M18 42L34.1311 26"
+                  stroke="#2A2E73"
+                  stroke-width="6"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <div onclick="nextPage()">
+              <svg
+                width="84"
+                height="84"
+                viewBox="0 0 84 84"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle
+                  cx="42"
+                  cy="42"
+                  r="39"
+                  transform="rotate(-90 42 42)"
+                  stroke="#2A2E73"
+                  stroke-width="6"
+                />
+                <path
+                  d="M18 42L66 42M66 42L49.8689 26.5M66 42L49.8689 58"
+                  stroke="#2A2E73"
+                  stroke-width="6"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="main">
+      <div class="full-container-center" style="gap: 124px">
+        <div style="width: 554px; height: 556px">
+          <img
+            style="width: 100%; height: 100%"
+            src="./images/assoc/green.png"
+            alt=""
+          />
+        </div>
+        <div class="content" style="max-width: 791px">
+          <div style="font-size: 40px">
+            Зелёный — самый свежий и экологичный цвет. Он успокаивает и создает
+            ощущение безопасности. А кому-то даже приносит удачу!
+          </div>
+          <div class="d-flex justify-content-between">
+            <div onclick="prevPage()">
+              <svg
+                width="84"
+                height="84"
+                viewBox="0 0 84 84"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle
+                  cx="42"
+                  cy="42"
+                  r="39"
+                  transform="rotate(90 42 42)"
+                  stroke="#2A2E73"
+                  stroke-width="6"
+                />
+                <path
+                  d="M66 42L18 42M18 42L34.1311 57.5M18 42L34.1311 26"
+                  stroke="#2A2E73"
+                  stroke-width="6"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <div onclick="nextPage()">
+              <svg
+                width="84"
+                height="84"
+                viewBox="0 0 84 84"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle
+                  cx="42"
+                  cy="42"
+                  r="39"
+                  transform="rotate(-90 42 42)"
+                  stroke="#2A2E73"
+                  stroke-width="6"
+                />
+                <path
+                  d="M18 42L66 42M66 42L49.8689 26.5M66 42L49.8689 58"
+                  stroke="#2A2E73"
+                  stroke-width="6"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="main">
+      <div class="full-container-center" style="gap: 124px">
+        <div style="width: 554px; height: 556px">
+          <img
+            style="width: 100%; height: 100%"
+            src="./images/assoc/blue.png"
+            alt=""
+          />
+        </div>
+        <div class="content" style="max-width: 791px">
+          <div style="font-size: 40px">
+            Голубой — успокаивающий и свежий. Довольно чист и ясен. Также
+            требует чистоты, поэтому считается гигиеничным цветом.
+          </div>
+          <div class="d-flex justify-content-between">
+            <div onclick="prevPage()">
+              <svg
+                width="84"
+                height="84"
+                viewBox="0 0 84 84"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle
+                  cx="42"
+                  cy="42"
+                  r="39"
+                  transform="rotate(90 42 42)"
+                  stroke="#2A2E73"
+                  stroke-width="6"
+                />
+                <path
+                  d="M66 42L18 42M18 42L34.1311 57.5M18 42L34.1311 26"
+                  stroke="#2A2E73"
+                  stroke-width="6"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <div onclick="nextPage()">
+              <svg
+                width="84"
+                height="84"
+                viewBox="0 0 84 84"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle
+                  cx="42"
+                  cy="42"
+                  r="39"
+                  transform="rotate(-90 42 42)"
+                  stroke="#2A2E73"
+                  stroke-width="6"
+                />
+                <path
+                  d="M18 42L66 42M66 42L49.8689 26.5M66 42L49.8689 58"
+                  stroke="#2A2E73"
+                  stroke-width="6"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="main">
+      <div class="full-container-center" style="gap: 124px">
+        <div style="width: 554px; height: 556px">
+          <img
+            style="width: 100%; height: 100%"
+            src="./images/assoc/dark-blue.png"
+            alt=""
+          />
+        </div>
+        <div class="content" style="max-width: 791px">
+          <div style="font-size: 40px">
+            Синий — самый спокойный и уравновешенный цвет. Довольно глубокий и
+            концентрирующий. Однако в большом количестве он может начать
+            угнетать...
+          </div>
+          <div class="d-flex justify-content-between">
+            <div onclick="prevPage()">
+              <svg
+                width="84"
+                height="84"
+                viewBox="0 0 84 84"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle
+                  cx="42"
+                  cy="42"
+                  r="39"
+                  transform="rotate(90 42 42)"
+                  stroke="#2A2E73"
+                  stroke-width="6"
+                />
+                <path
+                  d="M66 42L18 42M18 42L34.1311 57.5M18 42L34.1311 26"
+                  stroke="#2A2E73"
+                  stroke-width="6"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <div onclick="nextPage()">
+              <svg
+                width="84"
+                height="84"
+                viewBox="0 0 84 84"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle
+                  cx="42"
+                  cy="42"
+                  r="39"
+                  transform="rotate(-90 42 42)"
+                  stroke="#2A2E73"
+                  stroke-width="6"
+                />
+                <path
+                  d="M18 42L66 42M66 42L49.8689 26.5M66 42L49.8689 58"
+                  stroke="#2A2E73"
+                  stroke-width="6"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="main">
+      <div class="full-container-center" style="gap: 124px">
+        <div style="width: 554px; height: 556px">
+          <img
+            style="width: 100%; height: 100%"
+            src="./images/assoc/purple.png"
+            alt=""
+          />
+        </div>
+        <div class="content" style="max-width: 791px">
+          <div style="font-size: 40px">
+            Фиолетовый — мистический и мудрый. Очень таинственный и в то же
+            время довольно эстетичный.
+          </div>
+          <div class="d-flex justify-content-between">
+            <div onclick="prevPage()">
+              <svg
+                width="84"
+                height="84"
+                viewBox="0 0 84 84"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle
+                  cx="42"
+                  cy="42"
+                  r="39"
+                  transform="rotate(90 42 42)"
+                  stroke="#2A2E73"
+                  stroke-width="6"
+                />
+                <path
+                  d="M66 42L18 42M18 42L34.1311 57.5M18 42L34.1311 26"
+                  stroke="#2A2E73"
+                  stroke-width="6"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <div onclick="nextPage()">
+              <svg
+                width="84"
+                height="84"
+                viewBox="0 0 84 84"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle
+                  cx="42"
+                  cy="42"
+                  r="39"
+                  transform="rotate(-90 42 42)"
+                  stroke="#2A2E73"
+                  stroke-width="6"
+                />
+                <path
+                  d="M18 42L66 42M66 42L49.8689 26.5M66 42L49.8689 58"
+                  stroke="#2A2E73"
+                  stroke-width="6"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="main">
+      <div class="full-container-center" style="gap: 124px">
+        <div style="width: 554px; height: 556px">
+          <img
+            style="width: 100%; height: 100%"
+            src="./images/assoc/brown.png"
+            alt=""
+          />
+        </div>
+        <div class="content" style="max-width: 791px">
+          <div style="font-size: 40px">
+            Коричневый — родной, уютный, стабильный, натуральный и очень
+            простой.
+          </div>
+          <div class="d-flex justify-content-between">
+            <div onclick="prevPage()">
+              <svg
+                width="84"
+                height="84"
+                viewBox="0 0 84 84"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle
+                  cx="42"
+                  cy="42"
+                  r="39"
+                  transform="rotate(90 42 42)"
+                  stroke="#2A2E73"
+                  stroke-width="6"
+                />
+                <path
+                  d="M66 42L18 42M18 42L34.1311 57.5M18 42L34.1311 26"
+                  stroke="#2A2E73"
+                  stroke-width="6"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <div onclick="nextPage()">
+              <svg
+                width="84"
+                height="84"
+                viewBox="0 0 84 84"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle
+                  cx="42"
+                  cy="42"
+                  r="39"
+                  transform="rotate(-90 42 42)"
+                  stroke="#2A2E73"
+                  stroke-width="6"
+                />
+                <path
+                  d="M18 42L66 42M66 42L49.8689 26.5M66 42L49.8689 58"
+                  stroke="#2A2E73"
+                  stroke-width="6"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="main">
+      <div class="full-container-center" style="flex-direction: column">
+        <div class="d-flex" style="gap: 127px">
+          <div style="width: 346px; height: 340px">
+            <img
+              style="width: 100%; height: 100%"
+              src="./images/assoc/white.png"
+              alt=""
+            />
+          </div>
+          <div style="max-width: 791px; font-size: 40px">
+            Белый — главный цвет свободы и чистоты. Он может как приводить всё
+            окружающее к порядку, так и создавать ощущение пустоты и
+            отрешённости...
+          </div>
+        </div>
+        <div class="d-flex" style="margin-top: 81px; gap: 35px">
+          <div onclick="prevPage()">
+            <svg
+              width="84"
+              height="84"
+              viewBox="0 0 84 84"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle
+                cx="42"
+                cy="42"
+                r="39"
+                transform="rotate(90 42 42)"
+                stroke="#2A2E73"
+                stroke-width="6"
+              />
+              <path
+                d="M66 42L18 42M18 42L34.1311 57.5M18 42L34.1311 26"
+                stroke="#2A2E73"
+                stroke-width="6"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+          <div style="max-width: 791px; font-size: 40px; text-align: right">
+            Чёрный — пожалуй, самый универсальный и в то же время неоднозначный.
+            Он довольной нейтрален, но может привносить как состояние
+            стабильности и серьёзности, так и ощущение мрака и скорьби...
+          </div>
+          <div style="width: 346px; height: 340px">
+            <img
+              style="width: 100%; height: 100%"
+              src="./images/assoc/black.png"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="d-flex justify-center">
+          <a href="/color-associations-game.html" class="button-big"
+            >ПЕРЕЙТИ К УПРАЖНЕНИЮ</a
+          >
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

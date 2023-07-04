@@ -1,0 +1,17 @@
+.screen {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+.button {
+  font-size: 40px;
+  cursor: pointer;
+  color: #c7ffff;
+  font-weight: 700;
+  padding: 8px 69px;
+  background: #2a2e73;
+  text-decoration: none;
+  border-radius: 82px;
+}

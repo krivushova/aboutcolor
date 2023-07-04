@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <!-- <base href="/"> -->
+
+    <title>Simple Starter</title>
+    <meta name="description" content="Simple Starter Description" />
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <link rel="icon" href="images/favicon.png" />
+    <meta property="og:image" content="images/preview.jpg" />
+    <link rel="stylesheet" href="libs/bootstrap/css/bootstrap-reboot.min.css" />
+    <link rel="stylesheet" href="libs/bootstrap/css/bootstrap-grid.min.css" />
+
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/media.css" />
+
+    <link rel="stylesheet" href="css/color-charac-game.css" />
+
+    <script src="libs/jquery/jquery-3.6.0.min.js" defer></script>
+
+    <script src="js/color-charac-game.js" defer></script>
+  </head>
+  <body>
+    <div class="screen">
+      <div class="slider">
+        <div class="slider-before">
+          <img src="./images/charac/charac-5.png" alt="" />
+        </div>
+        <div class="slider-after">
+          <img src="./images/charac/charac-4.png" alt="" />
+        </div>
+        <a style="text-decoration: none" href="summary.html" class="button"
+          >ДАЛЕЕ</a
+        >
+      </div>
+    </div>
+  </body>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      function slider() {
+        document
+          .querySelector(".slider")
+          .addEventListener("mousemove", (event) => {
+            let x = event.offsetX;
+            console.log(x);
+            document.querySelector(".slider-after").style.width = x + "px";
+          });
+      }
+
+      slider();
+    });
+  </script>
+</html>
